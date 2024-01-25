@@ -21,7 +21,7 @@ const Form = () => {
         {
             success && (
                 <div>
-                    <p className="success">Registration Successful </p>
+                    <p className="success">Registration Successful!!! </p>
                 </div>
             )
         }
@@ -53,24 +53,16 @@ const Form = () => {
           })}
         />
         {errors.email && <p className="err">{errors.email.message}</p>}
-        <label htmlFor="">Password </label>
+        <label htmlFor="">Contact </label>
         <input
-          type="password"
-          name="password"
-          {...register("password", {
-            required: "Password is required",
-            minLength: {
-              value: 5,
-              message: "Password should be at least 5 characters",
-            },
-            maxLength: {
-                value: 20,
-                message: "Password cannot be more than 20 characters",
-              }
+          type="telephone"
+          name="phone"
+          {...register("phone", {
+            required: "Contact is required",
           })}
         />
-        {errors.password && <p className="err">{errors.password.message}</p>}
-        <input type="submit" value="Submit" className="btn" />
+        {errors.phone && <p className="err">{errors.phone.message}</p>}
+        <input type="submit" value="Register" className="btn" />
       </form>
     </div>
   );
