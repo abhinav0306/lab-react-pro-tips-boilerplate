@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.Nav{
+    background-color: #292A29;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+
+}
+.Logo{
+    font-size: 30px;
+    color: white;
+}
+.Pages{
+    color: white;
+    margin-left: 20px;
+}
